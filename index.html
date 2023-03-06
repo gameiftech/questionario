@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Questionário de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="https://lh3.googleusercontent.com/T1WH7-VZhYNemeg62ZgvPbXw7P9d4b2ntLmcbt000HKoSu9_V3XNBG8Qb0Fzi5m5n6D_eqO_jMAjhs86afo=w973-h220-rw">
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+            <li><a href="#student-info" accesskey="s">INFO</a></li>
+            <li><a href="#html-questions" accesskey="s">HTML</a></li>
+            <li><a href="#css-questions" accesskey="s">CSS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <form method="post" action="https://www.gameiftech.com.br/p/formulario.html">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Informações do aluno</h2>
+          <div class="info">
+            <label for="student-name">Nome:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">Data de nascimento<span class="sr-only">(Data de nascimento)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-question">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                O elemento legenda representa uma legenda para o conteúdo de sua elemento do conjunto de campos pai
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    Verdade
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    Falso
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                Um elemento de rótulo que aninha um elemento de entrada deve ter um atributo for com o mesmo valor que o id da entrada
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    Verdade
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    Falso
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Você é um desenvolvedor front-end?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Selecione uma opção</option>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Você tem alguma pergunta:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Quem é você..."></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://www.gameiftech.com.br/">Gameiftech</a><br />
+        Bragança Paulista<br />
+        São Paulo<br />
+        Brasil
+      </address>
+    </footer>
+  </body>
+</html>
